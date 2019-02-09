@@ -4,7 +4,7 @@
 @author: HuRuiFeng
 @file: array_and_vector.py
 @time: 2019/2/9 13:33
-@desc: 数组和向量，由于python中的数组和向量都可以用list表示，故只用一种表示就可以了
+@desc: 数组和向量
 """
 
 from common_lib.vector import Vector
