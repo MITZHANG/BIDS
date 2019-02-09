@@ -9,9 +9,11 @@
 
 class Set(set):
 
-    def __init__(self, array):
+    def __init__(self, array=None):
         if isinstance(array, list):
             super().__init__(array)
+        elif not array:
+            super().__init__()
 
     def insert(self, num):
         self.add(num)
@@ -27,3 +29,12 @@ class Set(set):
 
     def size(self):
         return len(self)
+
+    def empty(self):
+        if len(self) == 0:
+            return True
+        return False
+
+    def erase(self, num):
+        self.discard(num)
+
