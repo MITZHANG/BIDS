@@ -4,7 +4,7 @@
 @author: HuRuiFeng
 @file: array_and_vector.py
 @time: 2019/2/9 13:33
-@desc: 数组和向量
+@desc: 第3讲：数组和向量
 """
 
 from common_lib.vector import Vector
@@ -23,9 +23,7 @@ if __name__ == '__main__':
 
     # 列表初始化
     V3 = Vector([1, 2, 3, 4, 5])
-    for _, v in enumerate(V3):
-        print(v, end=" ")
-    print()
+    print(V3)
 
     # 动态变化
     V3.push_back(6)

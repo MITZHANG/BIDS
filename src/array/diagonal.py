@@ -4,13 +4,14 @@
 @author: HuRuiFeng
 @file: diagonal.py
 @time: 2019/2/9 14:21
-@desc: 对角线问题
+@desc: 第4讲：对角线问题
 """
 
 import numpy as np
 
 
-def displayM(label,M):
+# 采用numpy模块，将数组转换为mat矩阵，打印
+def displayM(label, M):
     print(label)
     print(np.mat(M))
 
@@ -22,7 +23,7 @@ if __name__ == '__main__':
     y = 2
     M = [[0 for j in range(n)] for i in range(n)]
 
-    # 方法1
+    # 方法1：按照行存储
     for i in range(n):
         for j in range(n):
             if i == j:

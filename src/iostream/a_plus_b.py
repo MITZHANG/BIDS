@@ -4,7 +4,7 @@
 @author: HuRuiFeng
 @file: a_plus_b.py
 @time: 2019/2/9 13:25
-@desc: a+b程序
+@desc: 第1讲：a+b程序
 """
 
 if __name__ == '__main__':
