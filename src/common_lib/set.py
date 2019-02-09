@@ -24,3 +24,6 @@ class Set(set):
 
     def find(self, num):
         return
+
+    def size(self):
+        return len(self)
