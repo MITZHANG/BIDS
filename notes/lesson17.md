@@ -12,25 +12,25 @@
 逆置向量:D,例如1,2,3,4,5$\Rightarrow$5,4,3,2,1
 ```c++
 void reverse(const vector<int>& D, vector<int>& R){
-	for(size_t i = 0; i < D.size(); ++i)
-		R[D.size()-i-1] = D[i]
+    for(size_t i = 0; i < D.size(); ++i)
+        R[D.size()-i-1] = D[i]
 }
 ```
 占用空间为变量i  
 ```c++
 void reverse(voctor<int>& D){
-	vector<int> R(D.size())
-	for(size_t i = 0; i < D.size(); ++i)
-		R[D.size()-i-1] = D[i]
-	for(size_t i = 0; i < R.size(); ++i) // D = R
-		D[i] = R[i]
+    vector<int> R(D.size())
+    for(size_t i = 0; i < D.size(); ++i)
+        R[D.size()-i-1] = D[i]
+    for(size_t i = 0; i < R.size(); ++i) // D = R
+        D[i] = R[i]
 }
 ```
 占用空间为R  
 ```c++
 void reverse(vector<int>& D){
-	for(size_t i = 0; i < D.size()/2; ++i)
-		swap(D[D.size()-i-1], D[i])
+    for(size_t i = 0; i < D.size()/2; ++i)
+        swap(D[D.size()-i-1], D[i])
 }
 ```
 占用空间为变量i、交换变量temp、函数调用  
