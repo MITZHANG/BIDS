@@ -19,7 +19,10 @@ class Vector(list):
             super().__init__()
 
     def size(self):
-        return len(self)
+        temp_list = self.copy()
+        while None in temp_list:
+            temp_list.remove(None)
+        return len(temp_list)
 
     def front(self):
         return self[0]
@@ -39,7 +42,13 @@ class Vector(list):
                     break
 
     def pop_back(self):
-        self.pop()
+        if self[-1] is not None:
+            self.pop()
+        else:
+            for i, value in enumerate(self):
+                if value is None:
+                    self[i-1] = None
+                    break
 
     # 得到key的下界位置
     def lower_bound(self, key):
@@ -80,13 +89,23 @@ class Vector(list):
     # 扩展向量的长度
     def resize(self, length, initNum=None):
         if isinstance(length, int):
-            super().__init__(self + [initNum for i in range(length-self.size())])
+            self.__init__(self + [initNum for i in range(length-self.size())])
 
     # 判断向量是否为空
     def empty(self):
         if len(self) != 0:
             return False
         return True
+
+    def __str__(self):
+        temp_list = self.copy()
+        while None in temp_list:
+            temp_list.remove(None)
+        return super.__str__(temp_list)
+
+    def capacity(self):
+        return len(self)
+
 
 # 范围类
 class Range(object):
