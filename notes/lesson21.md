@@ -8,7 +8,7 @@ $1 \prec \log n \prec n \prec n\log n \prec n^{1+\epsilon} \prec n^2 \prec n^d \
 ## 若干定理
 $1+2+...+n=\frac{n(n+1)}{2}$  
 $1^2+2^2+...+n^2=\frac{n(n+1)(2n+1)}{6}$   
-<img src="http://latex.codecogs.com/gif.latex?\left. \begin{array}{c} (n+1)^3-n^3=3n^2+3n+1 \\ n^3-(n-1)^3=3(n-1)^2+3(n-1)+1 \\ \vdots \\ 2^3-1^3 = 3(1)^2+3(1)+1 \end{array} \right\} \Rightarrow" />
+<img src="http://latex.codecogs.com/gif.latex?\left. \begin{array}{c} (n+1)^3-n^3=3n^2+3n+1 \\ n^3-(n-1)^3=3(n-1)^2+3(n-1)+1 \\ \vdots \\ 2^3-1^3 = 3(1)^2+3(1)+1 \end{array} \right\} \Rightarrow" />  
 **定理1:** $1^d+2^d+...+n^d=\Theta(n^d+1), \sum_{i=1}^{n}i^d=\Theta(n^d+1)$  
 **定理2:** $log1+log2+...+logn=log(n!)=\Theta(n \log n)$  
 使用：已知$T(n) \le c\log 1+c\log 2+...+c\log n=c \log (n!)$ 所以可得$T(n)=O(n \ log n)$  
