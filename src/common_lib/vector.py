@@ -28,7 +28,15 @@ class Vector(list):
         return self[-1]
 
     def push_back(self, num):
-        self.append(num)
+        if len(self) == 0:
+            self.append(num)
+        elif self[-1] is not None:
+            self.append(num)
+        elif self[-1] is None:
+            for i, value in enumerate(self):
+                if value is None:
+                    self[i] = num
+                    break
 
     def pop_back(self):
         self.pop()
@@ -69,6 +77,16 @@ class Vector(list):
         result = self[: first] + self[second:]
         self = self.__init__(result)
 
+    # 扩展向量的长度
+    def resize(self, length, initNum=None):
+        if isinstance(length, int):
+            super().__init__(self + [initNum for i in range(length-self.size())])
+
+    # 判断向量是否为空
+    def empty(self):
+        if len(self) != 0:
+            return False
+        return True
 
 # 范围类
 class Range(object):
