@@ -14,7 +14,7 @@ for(size_t i=0; i < V.size(); ++i) //O(n)时间
 ```
 当前S内有r个元素，运行时间每次$O(\log r)$，至多需要$c \log r$时间。  
 需要满足条件：$r\neq0, r\neq1$，运行时间为c。  
-计算上述插入程序的运行时间：$c+c+c\log2+c\log3+c\log(n-1) \le 2c + c\log(n!) = O(1) + O(n\logn) = O(n \log n)$  
+计算上述插入程序的运行时间：$c+c+c\log2+c\log3+c\log(n-1) \le 2c + c\log(n!) = O(1) + O(n\log n) = O(n \log n)$  
 计算for循环时间：$O(n)$  
 总时间：$O(n)+O(n \ log n) = O(n \ log n)$  
 性能参数$\Rightarrow$求和  
