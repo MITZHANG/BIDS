@@ -19,8 +19,10 @@ C：可选set、有序向量
 D：无序向量  
 需要组合起来，综合考虑，将数据类型排列组合，推出最短时间
 ## 总运行时间
-u次find<img src="http://latex.codecogs.com/gif.latex?\left \{ \begin{array}{c} O(1) \Rightarrow uc=O(u)\\ O(\log n) \Rightarrow uc \log v=O(u\log v) \\ O(n) \Rightarrow ucv = O(uv) \end{array}\right."/>  
-u次insert<img src="http://latex.codecogs.com/gif.latex?\left \{ \begin{array}{c} O(1) \Rightarrow \sum_{j=1}^uc=O(u)\\ O(\log n) \Rightarrow \sum_{j=1}^uc\log j=O(u\log u) \\ O(n) \Rightarrow \sum_{j=1}^ucj = O(u^2) \end{array}\right."/>  
+u次find  
+<img src="http://latex.codecogs.com/gif.latex?\left \{ \begin{array}{c} O(1) \Rightarrow uc=O(u)\\ O(\log n) \Rightarrow uc \log v=O(u\log v) \\ O(n) \Rightarrow ucv = O(uv) \end{array}\right."/>    
+u次insert  
+<img src="http://latex.codecogs.com/gif.latex?\left \{ \begin{array}{c} O(1) \Rightarrow \sum_{j=1}^uc=O(u)\\ O(\log n) \Rightarrow \sum_{j=1}^uc\log j=O(u\log u) \\ O(n) \Rightarrow \sum_{j=1}^ucj = O(u^2) \end{array}\right."/>    
 ## 神秘选手
 特定问题：自然数范围在[0，U]之间，可让find和insert都只用$O(1)$时间，这个是最快的操作。  
 如何实现：用长为U的向量V。  
