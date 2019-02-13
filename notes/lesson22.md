@@ -18,5 +18,5 @@ for(size_t i=0; i < V.size(); ++i) //O(n)时间
 计算for循环时间：$O(n)$  
 总时间：$O(n)+O(n \ log n) = O(n \ log n)$  
 性能参数$\Rightarrow$求和  
-$O(\log r)$累积分析：$O(1)$不影响，$n-1$过渡到$n$ 
+$O(\log r)$累积分析：$O(1)$不影响，$n-1$过渡到$n$   
 $c\log r$分析 $\le \sum_{r=1}^{n}(c \log r)=c \log(n!)=O(n\log n)$
