@@ -4,7 +4,7 @@
 @author: HuRuiFeng
 @file: set.py
 @time: 2019/2/9 18:19
-@desc:
+@desc: set集合实现
 """
 
 class Set(set):

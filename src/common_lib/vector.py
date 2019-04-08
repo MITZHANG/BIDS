@@ -4,7 +4,7 @@
 @author: HuRuiFeng
 @file: vector.py
 @time: 2019/2/9 13:51
-@desc: vector实现
+@desc: vector向量实现
 """
 
 
