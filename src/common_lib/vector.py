@@ -106,6 +106,11 @@ class Vector(list):
     def capacity(self):
         return len(self)
 
+    def __iter__(self):
+        return super().__iter__()
+
+    def __next__(self):
+        return super().__next__()
 
 # 范围类
 class Range(object):
