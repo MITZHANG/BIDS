@@ -8,7 +8,7 @@
 """
 
 class Node(object):
-    def __init__(self, val=None, p = 0):
+    def __init__(self, val=None, p = None):
         self.data = val
         self.next = p
 
@@ -81,7 +81,7 @@ class LinkList(object):
             self.head = q
         else:
             p = self.head
-            while p.next != 0:
+            while p.next:
                 p = p.next
             p.next = q
 
@@ -92,7 +92,7 @@ class LinkList(object):
         j = 0
         p = self.head
 
-        while p.next != 0 and j < index:
+        while p.next and j < index:
             p = p.next
             j += 1
 
@@ -112,7 +112,7 @@ class LinkList(object):
         p = self.head
         post  = self.head
         j = 0
-        while p.next!=0 and j<index:
+        while p.next and j<index:
             post = p
             p = p.next
             j+=1
@@ -134,7 +134,7 @@ class LinkList(object):
         p = self.head
         post  = self.head
         j = 0
-        while p.next != 0 and j < index:
+        while p.next and j < index:
             post = p
             p = p.next
             j += 1
@@ -148,7 +148,7 @@ class LinkList(object):
             return
         p = self.head
         i = 0
-        while p.next != 0 and not p.data == value:
+        while p.next and not p.data == value:
             p = p.next
             i += 1
         if p.data == value:
@@ -159,7 +159,7 @@ class LinkList(object):
     def __str__(self):
         p = self.head
         result = [str(p)]
-        while p.next != 0:
+        while p.next:
             p = p.next
             result.append(str(p))
         return " -> ".join(result)

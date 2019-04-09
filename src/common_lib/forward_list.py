@@ -26,7 +26,7 @@ class forward_list(list):
             return None
 
     def __iter__(self):
-        return self
+        return super().__iter__()
 
     def __next__(self):
         self.index += 1
