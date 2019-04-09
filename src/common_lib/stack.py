@@ -22,7 +22,7 @@ class Stack(object):
             raise IndexError('pop from empty stack')
         return self.stack.pop()
 
-    def peek(self):
+    def top(self):
         return self.stack[-1]
 
     def size(self):
