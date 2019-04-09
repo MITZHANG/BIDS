@@ -9,7 +9,6 @@
 from common_lib.link_list import Node
 from common_lib.vector import Vector
 
-
 def traverse(header):
     p = header.next
     result = []
@@ -22,9 +21,13 @@ def reverse(header):
     prev = None
     curr = header.next
     while curr:
+        # 存储下一个节点的位置
         next = curr.next
+        # 将当前节点进行逆置
         curr.next = prev
+        # 前一个节点向下移动
         prev = curr
+        # 当前节点向下移动
         curr = next
     header.next = prev
 
