@@ -7,7 +7,6 @@
 @desc: forward_list实现
 """
 
-
 class forward_list(list):
 
     def __init__(self, length=None, initNum=None):
