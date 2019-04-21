@@ -50,6 +50,9 @@ class Vector(list):
                     self[i-1] = None
                     break
 
+    def push(self, num):
+        self.push_back(num)
+
     # 得到key的下界位置
     def lower_bound(self, key):
         low, high = 0, len(self) - 1
